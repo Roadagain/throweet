@@ -6,8 +6,9 @@ import sys
 from requests_oauthlib import OAuth1Session
 
 # read settings
-settings = open(os.path.expanduser('~/.throweet.settings'))
-CK, CS, AT, AS = map(lambda x: x.strip(), settings.readlines())
+config_path = os.path.expanduser('~/.throweet_config')
+config = open(config_path)
+CK, CS, AT, AS = map(lambda x: x.strip(), config.readlines())
 
 # for posting tweets
 url = 'https://api.twitter.com/1.1/statuses/update.json'
