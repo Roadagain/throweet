@@ -1,4 +1,4 @@
-# throweet.sh
+# throweet
 コマンドラインからツイートだけしたい
 
 ## 使い方
